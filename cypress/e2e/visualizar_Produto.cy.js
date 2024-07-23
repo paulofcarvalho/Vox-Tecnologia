@@ -1,4 +1,4 @@
-describe('Teste para visualizar um produto', () => {
+describe('Feat para visualizar um produto', () => {
     beforeEach(() => {
       //Autenticação do usuário
       cy.visit('https://www.saucedemo.com/v1/index.html');
