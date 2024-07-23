@@ -1,4 +1,4 @@
-describe('Teste - Vox Tecnologia', () => {
+describe('Feat para autenticação do usuário ', () => {
   beforeEach(() => {
     cy.visit('https://www.saucedemo.com/v1/index.html');
   });
@@ -19,6 +19,7 @@ describe('Teste - Vox Tecnologia', () => {
     cy.get('h3[data-test="error"]').should('be.visible');
   });
 
+  //Teste autenticação sem informar as credenciais obrigatórias
   it('Login sem sucesso - ausência de preenchimento', () => {
     cy.get('#login-button').click();
     cy.get('h3[data-test="error"]').should('be.visible');
